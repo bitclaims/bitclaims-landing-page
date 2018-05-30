@@ -1,0 +1,56 @@
+.brand-text{
+font-family: IBMPlexSans;
+font-size: 24px;
+font-weight: 500;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #63549d;
+}
+
+.bitclaims-navbar{
+background-color: #ffffff;
+background-color: var(--white);
+box-shadow: 0 1px 0 0 #d3d4de;
+}
+
+.bitclaims-navbar li{
+  font-family: 'IBM Plex Sans', sans-serif;
+font-size: 18px;
+font-weight: 500;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #a8acb8;
+}
+
+.sign-up-button{
+  color:white;
+font-family: 'IBM Plex Sans', sans-serif;
+border-radius: 4px;
+background-image: linear-gradient(rgba(147, 126, 234, 0.78), rgba(147, 126, 234, 0.78)), linear-gradient(to top, rgba(123, 105, 195, 0), #eab5be 88%);
+}
+
+.navbar-brand{
+font-family: 'IBM Plex Sans', sans-serif;
+
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #63549d !important;
+}
+
+#brand-text{
+  font-size: 24px;
+  padding-top: 9px;
+}
+
+
+.Radically-Affordable-Healthcare {
+  width: 579px;
+  height: 112.4px;
+  color: #63549d;
+}

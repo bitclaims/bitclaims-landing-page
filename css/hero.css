@@ -1,0 +1,54 @@
+.phone{
+  width: 578px;
+ height: 639px;
+}
+
+.Radically-Affordable-Healthcare{
+  width: 574px;
+ height: 136px;
+ font-family: 'IBM Plex Sans', sans-serif;
+ font-size: 58px;
+ font-weight: normal;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: 1.05;
+ letter-spacing: normal;
+ color: #63549d;
+}
+
+.Join-the-global-community-thats-making-healthcare {
+  width: 720px;
+  height: 99px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222436;
+}
+
+.BitClaims-combines-direct-price-discovery-with-the {
+  width: 450px;
+  height: 37px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7c7f8f;
+}
+
+.Rectangle-22 {
+  width: 232.7px;
+  height: 46px;
+  border-radius: 4px;
+  border: solid 1px transparent;
+  border-color: linear-gradient(#ffffff, #ffffff), linear-gradient(to top, #937eea, #f1b9c3);
+  background-image: linear-gradient(var(--white), var(--white)), linear-gradient(to top, #937eea, #f1b9c3);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}

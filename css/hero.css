@@ -1,8 +1,8 @@
 .phone {
-  width: 578px;
-  height: 639px;
-  position: relative;
-  right: 20%;
+
+  /* position: relative;
+  right: 20%; */
+
 }
 
 .Radically-Affordable-Healthcare {
@@ -19,8 +19,6 @@
 }
 
 .Join-the-global-community-thats-making-healthcare {
-  width: 720px;
-  height: 99px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 38px;
   font-weight: 500;
@@ -61,7 +59,7 @@
 
 .hero-logo {
   position: relative;
-  right: 30px;
+  right: 23px;
   width: 77px;
   height: 77px;
   margin-bottom: 4%;
@@ -83,10 +81,10 @@
   color: #7b69c3;
   height: 46px;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 16px;
+  /* font-size: 16px; */
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .signup-button {
@@ -116,7 +114,7 @@
   font-family: 'IBM Plex Sans', sans-serif;
   background-color: var(--white);
   color: #7c7f8f;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .left-button{
@@ -133,8 +131,8 @@
 }
 
 .ark-icon{
-  margin-left:1px;
-  margin-right: 1px;
+margin-left:10px;
+  margin-right: 10px;
 }
 
 .input-icon{
@@ -165,4 +163,18 @@ outline: none;
 .find-us-on-github{
   /* padding-left: 3%; */
   padding-right: 26px;
+}
+
+.social-icon{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #7b69c3;
+    text-decoration: none;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
 }

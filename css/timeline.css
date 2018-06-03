@@ -1,0 +1,10 @@
+.Development-timeline {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #595c6e;
+  white-space: nowrap;
+}
+
+.timeline-background {
+  background-image: linear-gradient(to top, rgba(254, 176, 228, 0), #bdb5ea, #c3b5ea);
+}

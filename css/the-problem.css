@@ -1,0 +1,62 @@
+.the-problem {
+  width: 97px;
+  height: 19px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7c7f8f;
+}
+
+.Healthcare-costs-are-out-of-control {
+  width: 557px;
+  height: 47px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #595c6e;
+}
+
+.The-problem-fullwidth {
+  background-color: #F9DFC3;
+}
+
+.Unsustainable-Pricing {
+  width: 234px;
+  height: 32px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  color: #63549d;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.At-18-percent-of-Americas-economy-and-growing-2-p {
+  width: 502px;
+  height: 125px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  color: #7c7f8f;
+}
+
+.spacer {
+  height: 70px;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-section-image {
+  vertical-align: middle
+}
+
+.graph{
+  position: relative;
+  bottom: 10px;
+}

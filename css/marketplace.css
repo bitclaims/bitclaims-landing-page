@@ -21,5 +21,12 @@ margin-top: 5%;
 }
 
 .market-image{
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  /* margin-right: 20% */
+}
+
+
+.pool-image{
+  /* margin: 0 auto; */
+  margin-right: 20%
 }

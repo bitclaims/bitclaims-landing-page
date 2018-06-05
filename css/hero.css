@@ -6,15 +6,18 @@
 }
 
 .Radically-Affordable-Healthcare {
-
-  height: 136px;
+  /* height: 136px; */
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 58px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.05;
-  letter-spacing: normal;
+  color: #63549d;
+}
+
+.Radically-Affordable-Healthcare-mobile {
+  /* height: 136px; */
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 38px;
+  line-height: 1.05;
   color: #63549d;
 }
 
@@ -22,16 +25,19 @@
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 38px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  color: #222436;
+}
+
+.Join-the-global-community-thats-making-healthcare-mobile {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
   color: #222436;
 }
 
 .BitClaims-combines-direct-price-discovery-with-the {
     /* text-align: left; */
-  height: 37px;
+
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -67,6 +73,11 @@
 
 .email {
   margin-bottom: 1%;
+}
+
+.mobileform{
+
+margin-bottom: 5%;
 }
 
 .email input{

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html ng-app="myApp" class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
@@ -31,437 +31,45 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
+<div ng-include="'partials/nav.html'"></div>
 
-  <nav class="navbar navbar-default bitclaims-navbar">
-    <div class="container">
+<div ng-include="'partials/hero.html'"></div>
 
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-        </button>
+<div ng-include="'partials/theProblem.html'"></div>
 
-        <a class="navbar-brand" href="#">
-          <img alt="BitClaims" src="img/bitclaims-logo.png" width="20" height="20">
-        </a>
-        <a id="brand-text" class="navbar-brand" href="#">BitClaims</a>
+<div ng-include="'partials/theSolution.html'"></div>
 
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#">about</a></li>
-          <li><a href="#">team</a></li>
-          <li><a href="#">timeline</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">blog</a></li>
-          <li><a href="#">whitepaper</a></li>
-          <form class="navbar-form navbar-left">
-            <button type="submit" class="btn btn-default sign-up-button">sign up</button>
-          </form>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-  </nav>
-  <!-- Hero Start-->
-<section id="hero">
+<div ng-include="'partials/marketplace.html'"></div>
 
-  <div class="container">
+<div ng-include="'partials/patientChoice.html'"></div>
 
+<div ng-include="'partials/pricePressure.html'"></div>
 
-    <div class="row row-eq-height  hidden-sm hidden-xs">
+<div ng-include="'partials/technology.html'"></div>
 
-      <!-- Start of left side legend -->
-      <div class="col-md-8">
+<div ng-include="'partials/blockchain.html'"></div>
 
-        <img class="hero-logo" alt="BitClaims" src="img/i.bitclaims@3x.png" width="77" height="77">
-        <div class="Radically-Affordable-Healthcare">Radically <br> Affordable Healthcare</div>
-        <div class="Join-the-global-community-thats-making-healthcare"><b>Join the global community that's making Healthcare accessibleto everyone</b></div>
+<div ng-include="'partials/timeline.html'"></div>
 
-        <div class="BitClaims-combines-direct-price-discovery-with-the hidden-sm hidden-xs">
-          BitClaims combines direct price discovery with the power of blockchain <br> technology to bring you the most affordable healthcare of all time
-        </div>
+<div ng-include="'partials/meetTheTeam.html'"></div>
 
+<div ng-include="'partials/footer.html'"></div>
 
-        <div class="row ">
-          <!-- End of left side Hero-->
-          <div class="col-md-8">
-
-            <div class="input-group email">
-              <span class="input-group-addon input-icon" id="basic-addon2"><i class="fas fa-envelope fa-2x"></i></span>
-              <input type="text" class=" github-discord" aria-describedby="basic-addon2">
-              <span class="input-group-addon signup-button" id="basic-addon2">SIGN UP</span>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6 nopadding left-button">
-
-                <button type="button" class="btn github-discord  btn-block icon-buttons">
-                    <i class="fab fa-github fa-2x social-icon"></i>
-                        <span class="find-us-on-github">FIND US ON GITHUB</span>
-                  </button>
-              </div>
-
-              <div class="col-md-6 nopadding right-button">
-                <button type="button" class="btn  github-discord  btn-block icon-buttons">
-                    <i class="fab fa-discord fa-2x social-icon"></i>
-                    <span class="find-us-on-github">  JOIN US ON DISCORD</span>
-                  </button>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-      <!-- End of left side Hero-->
-
-      <!-- Start of right side Hero -->
-      <div class="col-md-4 Aligner-item Aligner-item--bottom hidden-sm hidden-xs">
-        <img class="phone img-responsive " src="img\croppedPhone.png" alt="dd">
-      </div>
-      <!-- End of right side Hero-->
-
-    </div>
-
-
-    <div class="spacer"></div>
-    <!-- Start of Supported by ARK foundation Section -->
-    <div class="row supported">
-
-      <div class="col-md-4 test Aligner">
-        <div class="Line hidden-sm hidden-xs"></div>
-      </div>
-
-      <div class="col-md-4 text-center test Aligner" class="supported-by-the-ark-foundation ">
-        <img src="img\i.ark.png" class="ark-icon" alt=""> SUPPORTED BY THE ARK FOUNDATION
-      </div>
-
-      <div class="col-md-4 test Aligner">
-        <div class="Line hidden-sm hidden-xs"></div>
-      </div>
-
-    </div>
-
-    <div class="spacer"></div>
-    <!-- End of Supported by ARK foundation Section -->
-
-  </div>
-</section>
-  <!-- End of Hero Section -->
-
-  <!-- Start of the Problem Section -->
-  <section>
-    <div class="container-fluid The-problem-fullwidth">
-
-
-      <div class="container">
-        <div class="spacer"></div>
-        <div class="the-problem">THE PROBLEM</div>
-        <div class="row">
-          <div class="spacer"></div>
-          <div class="col-md-6">
-            <div class="Healthcare-costs-are-out-of-control">Healthcare costs are out of control</div>
-            <div class="spacer"></div>
-            <img src="img\i.unsustainable-pricing@3x.png" width="34">
-            <div class="Unsustainable-Pricing">Unsustainable Pricing </div>
-            <div class="At-18-percent-of-Americas-economy-and-growing-2-p">
-              At 18 percent of America’s economy and growing 2 percent faster than Gross Domestic Product, both the level and rate of growth of national health care spending are seen as alarming. While this isn’t a new problem, the amount of spending on health care,
-              combined with the country’s fiscal challenges, makes the need to contain health care costs a national priority
-            </div>
-          </div>
-            <div class="spacer hidden-lg hidden-md "></div>
-          <div class="col-md-6">
-            <img class="img-responsive graph img-responsive hidden-sm " src="img\i.graph@3x.png" alt="">
-            <img class="img-responsive graph img-responsive hidden-lg hidden-md hidden-xs" src="img\i.graph.png" alt="">
-          </div>
-        </div>
-
-        <div class="spacer"></div>
-
-      </div>
-
-      <div class="spacer"></div>
-
-    </div>
-  </section>
-  <!-- End of the Problem Section -->
-  <!-- Start of the Solution Section -->
-  <section>
-    <div class="container-fluid">
-
-
-      <div class="container">
-          <div class="spacer"></div>
-          <div class="the-problem">THE SOLUTION</div>
-        <div class="row">
-
-          <div class="col-md-7">
-            <div class="spacer"></div>
-            <div class="Healthcare-costs-are-out-of-control">Reimagining the marketplace</div>
-            <div class="spacer"></div>
-            <img src="img\i.price-transparency@3x.png" width="34">
-            <div class="Unsustainable-Pricing">Price transparency</div>
-            <div class="At-18-percent-of-Americas-economy-and-growing-2-p">
-              At 18 percent of America’s economy and growing 2 percent faster than Gross Domestic Product, both the level and rate of growth of national health care spending are seen as alarming. =
-            </div>
-          </div>
-
-          <div class="col-md-5">
-            <div class="spacer"></div>
-            <img src="img\Illustration.transparency.png" class="img-responsive center-block main-section-image" alt="">
-          </div>
-
-        </div>
-
-
-        <div class="spacer"></div>
-      </div>
-
-    </div>
-  </section>
-  <!-- End of the Solution Section -->
-
-  <!-- Start of marketplace Section -->
-  <section>
-    <div class="container-fluid market-fluid">
-      <div class="spacer"></div>
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-6 col-md-push-6">
-            <img src="img\i.power-in-numbers.png">
-            <div class="Power-in-Numbers">Power in Numbers</div>
-
-            <div class="At-18-percent-of-Americas-economy-and-growing-2-p">
-              At 18 percent of America’s economy and growing 2 percent faster than Gross Domestic Product, both the level and rate of growth of national health care spending are seen as alarming. =
-            </div>
-
-          </div>
-            <div class="spacer hidden-lg hidden-md "></div>
-          <div class="col-md-6 Aligner col-md-pull-6">
-            <img class="pool-image img-responsive" src="img\cropPool.png">
-          </div>
-
-
-        </div>
-      </div>
-        <div class="spacer"></div>
-    </div>
-  </section>
-  <!-- End of marketplace Section -->
-
-  <!-- Start of Patient Choice  Section -->
-  <section>
-    <div class="container-fluid patient-choice-fluid">
-      <div class="spacer"></div>
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6">
-
-            <img src="img\i.patient-choice.png">
-
-            <div class="Power-in-Numbers">
-              Patient Choice
-            </div>
-
-            <div class="At-18-percent-of-Americas-economy-and-growing-2-p">
-              At 18 percent of America’s economy and growing 2 percent faster than Gross Domestic Product, both the level and rate of growth of national health care spending are seen as alarming. =
-            </div>
-
-          </div>
-            <div class="spacer hidden-lg hidden-md "></div>
-          <div class="col-md-6 Aligner">
-            <img class="market-image img-responsive" src="img\illustration.patient-choice.png">
-          </div>
-
-
-
-        </div>
-
-
-        <div class="spacer"></div>
-      </div>
-    </div>
-  </section>
-  <!-- End of Patient Choice Section -->
-
-  <!-- Start of marketplace Section -->
-  <section>
-    <div class="container-fluid market-fluid">
-      <div class="spacer"></div>
-
-      <div class="container">
-
-        <div class="row">
-
-
-          <div class="col-md-6 col-md-push-6">
-            <img src="img\i.downwards-price-pressure.png">
-            <div class="Power-in-Numbers">Downward Price Pressure</div>
-            <div class="At-18-percent-of-Americas-economy-and-growing-2-p">
-              At 18 percent of America’s economy and growing 2 percent faster than Gross Domestic Product, both the level and rate of growth of national health care spending are seen as alarming. =
-            </div>
-          </div>
-    <div class="spacer hidden-lg hidden-md "></div>
-          <div class="col-md-6 Aligner col-md-pull-6">
-            <img class="market-image img-responsive" src="img\illustration.downward-price-pressure.png">
-          </div>
-
-
-
-        </div>
-
-
-        <div class="spacer"></div>
-      </div>
-    </div>
-  </section>
-  <!-- End of marketplace Section -->
-
-  <!-- Start of the Solution Section -->
-  <section>
-    <div class="container-fluid">
-
-
-      <div class="container">
-        <div class="spacer"></div>
-        <div class="Line"></div>
-        <div class="spacer"></div>
-        <div class="the-problem">THE TECHNOLOGY</div>
-        <div class="row">
-
-          <div class="col-md-6">
-
-
-            <div class="spacer"></div>
-            <div class="Healthcare-costs-are-out-of-control">Secure transactions, Direct Payments</div>
-            <div class="spacer"></div>
-
-            <img src="img\i.smart-contract.png">
-
-            <div class="Unsustainable-Pricing">
-              Smart Contracts
-            </div>
-
-            <div class="At-18-percent-of-Americas-economy-and-growing-2-p">
-              At 18 percent of America’s economy and growing 2 percent faster than Gross Domestic Product, both the level and rate of growth of national health care spending are seen as alarming. =
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="spacer"></div>
-            <img src="img\illustration.smart-contract.png" class="img-responsive center-block main-section-image" alt="">
-          </div>
-
-        </div>
-
-
-        <div class="spacer"></div>
-      </div>
-
-    </div>
-  </section>
-  <!-- End of the Solution Section -->
-
-  <!-- Start of marketplace Section -->
-  <section>
-    <div class="container-fluid market-fluid">
-
-      <div class="spacer"></div>
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-6 col-md-push-6">
-            <img src="img\i.blockchian.png">
-            <div class="Power-in-Numbers">Blockchain</div>
-            <div class="At-18-percent-of-Americas-economy-and-growing-2-p">
-              At 18 percent of America’s economy and growing 2 percent faster than Gross Domestic Product, both the level and rate of growth of national health care spending are seen as alarming. =
-            </div>
-          </div>
-    <div class="spacer hidden-lg hidden-md "></div>
-          <div class="col-md-6 Aligner col-md-pull-6">
-            <img class="market-image img-responsive" src="img\illustration.blockchain.png">
-          </div>
-
-        </div>
-
-
-        <div class="spacer"></div>
-      </div>
-    </div>
-  </section>
-  <!-- End of marketplace Section -->
-
-  <!-- Start of the Solution Section -->
-  <section>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="spacer"></div>
-        <div class="Line"></div>
-        <div class="spacer"></div>
-        <div class="row row-eq-height">
-
-          <div class="Development-timeline">
-            Development timeline
-          </div>
-
-        </div>
-        <div class="spacer"></div>
-      </div>
-
-    </div>
-    <div class="container-fluid timeline-background">
-
-      <div class="spacer"></div>
-
-      <div class="spacer"></div>
-      <div class="row row-eq-height">
-
-        <div class="col-md-4">
-
-        </div>
-
-        <div class="col-md-4">
-
-        </div>
-
-        <div class="col-md-4">
-
-        </div>
-
-
-      </div>
-      <div class="spacer"></div>
-
-
-    </div>
-  </section>
-  <!-- End of the Solution Section -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" type="text/javascript">
+
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script>
     window.ga = function() {
       ga.q.push(arguments)

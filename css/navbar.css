@@ -59,4 +59,7 @@ color: #63549d !important;
   border: none;
   outline: none;
 }
-For t
+
+.navbar{
+  background-color: white;
+}

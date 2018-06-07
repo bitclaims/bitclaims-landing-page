@@ -5,6 +5,7 @@
 
 }
 
+
 .Radically-Affordable-Healthcare {
 
   height: 136px;
@@ -63,6 +64,13 @@
   width: 77px;
   height: 77px;
   margin-bottom: 4%;
+}
+
+#mc_embed_signup{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif; 
+  width:100%; 
 }
 
 .email {

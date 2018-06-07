@@ -46,11 +46,21 @@ color: #63549d !important;
 #brand-text{
   font-size: 24px;
   padding-top: 9px;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 
 .Radically-Affordable-Healthcare {
 
-  height: 112.4px;
+
   color: #63549d;
+}
+.navbar-toggle {
+  border: none;
+  outline: none;
+}
+
+.navbar{
+  background-color: white;
+  margin-bottom: 20px;
 }

@@ -23,7 +23,7 @@
 }
 
 .Unsustainable-Pricing {
-  
+
   height: 32px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
@@ -42,6 +42,10 @@
 
 .spacer {
   height: 70px;
+}
+
+.mobile-spacer {
+  height: 20px;
 }
 
 .row-eq-height {

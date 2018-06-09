@@ -23,10 +23,8 @@
 }
 
 .Unsustainable-Pricing {
-
-  height: 32px;
+  font-size: 140%;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 21px;
   color: #63549d;
   margin-bottom: 5%;
   margin-top: 5%;

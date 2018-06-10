@@ -1,8 +1,8 @@
 .footer{
 
-  height: 478px;
+  height: 138px;
   color: white;
- letter-spacing: .75px;
+  letter-spacing: .75px;
   background-image: linear-gradient(#130746, #130746), linear-gradient(to top, #37081c, #130746);
 }
 

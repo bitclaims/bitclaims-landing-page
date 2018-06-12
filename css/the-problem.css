@@ -19,7 +19,8 @@
 }
 
 .The-problem-fullwidth {
-  background-color: #F9DFC3;
+  background: rgb(131,58,180);
+background: linear-gradient(160deg, rgba(131,58,180,0) 0%, rgba(239,189,189,0.8827906162464986) 28%);
 }
 
 .Unsustainable-Pricing {

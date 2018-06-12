@@ -66,4 +66,17 @@ color: #63549d !important;
 .navbar{
   background-color: white;
   margin-bottom: 20px;
+  
+}
+.item{
+  
+  height: 109px;
+  font-size: 18px;
+  background-color: #f9fafb;
+  color: #a8acb8;
+  border-bottom: 1px solid #eeeff6;
+}
+
+.nav-text{
+ margin-left: 13%;
 }

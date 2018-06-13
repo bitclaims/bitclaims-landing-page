@@ -6,10 +6,9 @@
 }
 
 .timeline-background {
-  background: rgb(254,176,228);
-  background: linear-gradient(265deg, rgba(254,176,228,0.773546918767507) 0%, rgba(195,181,234,1) 100%);
+  background: rgb(254, 176, 228);
+  background: linear-gradient(265deg, rgba(254, 176, 228, 0.773546918767507) 0%, rgba(195, 181, 234, 1) 100%);
 }
-
 
 /* external css: flickity.css */
 
@@ -18,107 +17,131 @@
   box-sizing: border-box;
 }
 
-body { font-family: sans-serif; }
-
-flickity{
-  display:block;
-  position:relative;
-
-  padding:10px;
-  background: rgb(254,176,228);
-background: none;
+body {
+  font-family: sans-serif;
 }
-flickity-slide{
 
-  font-size:26px;
-  display:block;
-  width:35%;
-  height:300px;
-  margin-right:50px;
+flickity {
+  display: block;
+  position: relative;
+  padding: 10px;
+  background: rgb(254, 176, 228);
+  background: none;
+}
 
+flickity-slide {
+  font-size: 26px;
+  display: block;
+  width: 35%;
+  height: 300px;
+  margin-right: 50px;
   /* display:flex;
   align-items:center;
   justify-content:center; */
   /* margin-left:  50%;
   margin-right: 50%; */
-
   background-clip: content-box;
-  border-radius: 2px;
+  border-radius: 10px;
   overflow: visible;
-
-}
-.flickity-card{
-    color:#fff;
-      background-color:white;
-      height:250px;
 }
 
-.timeline-card-header{
+.flickity-card {
+  color: #fff;
+  background-color: white;
+  height: 250px;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.timeline-card-header {
   color: #63549d;
   font-size: 24px;
   padding: 10px;
 }
 
-.timeline-card-content{
+.timeline-card-content {
   color: #7c7f8f;
   font-size: 16px;
   padding: 10px;
 }
 
-
 .dot {
-    height: 15px;
-    width: 15px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    margin: auto;
-    z-index: 100;
-    position: absolute;
-    left:50%;
-    bottom: 11px;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: auto;
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  bottom: 11px;
 }
 
-.connected-dots{
+.connected-dots {
   text-align: center;
 }
 
-.flickity-card{
+.flickity-card {
   background-color: white;
 }
 
-.flickity-viewport{
+.flickity-viewport {
   height: 400px !important;
 }
 
-
-.timeline-row{
+.timeline-row {
   margin-top: 30px;
-
 }
 
-.timeline-line{
+.timeline-line {
   height: 0px;
   border: solid 1px #eeeff6;
   background-color: #eeeff6;
 }
 
 /* center cards can just stretch right  */
-.timeline-line-center{
+
+.timeline-line-center {
   width: 120%;
 }
 
-
 /* last card only goes half way */
-.timeline-line-left{
+
+.timeline-line-left {
   width: 50%;
 }
 
-
-.timeline-line-right{
-
+.timeline-line-right {
   width: 100%;
   position: absolute;
-  left:50%;
+  left: 50%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  flickity-slide{
+
+    width:90%;
+
+
+  }
+
+@media only screen and (min-width: 600px) {
+    flickity-slide{
+
+      width:90%;
+
+    }
+
+  @media only screen and (min-width: 768px) {
+        flickity-slide{
+
+          width:90%;
+
+
+        }
 
 }

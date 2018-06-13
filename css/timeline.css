@@ -29,13 +29,13 @@ flickity{
 background: none;
 }
 flickity-slide{
-  
+
   font-size:26px;
   display:block;
   width:35%;
-  height:80%;
+  height:300px;
   margin-right:50px;
-  background:gray;
+
   /* display:flex;
   align-items:center;
   justify-content:center; */
@@ -44,6 +44,7 @@ flickity-slide{
 
   background-clip: content-box;
   border-radius: 2px;
+  overflow: visible;
 
 }
 .flickity-card{
@@ -67,76 +68,18 @@ flickity-slide{
 .dot {
     height: 25px;
     width: 25px;
-    background-color: #bbb;
+    background-color: white;
     border-radius: 50%;
     display: inline-block;
     margin: auto;
+    z-index: 100;
+margin-top: 10px;
 }
 
 .connected-dots{
   text-align: center;
 }
 
-
-
-@media only screen and (max-width: 600px) {
-  flickity-slide{
-    color:#fff;
-    font-size:26px;
-    display:block;
-    width:90%;
-    height:200px;
-    margin-right:50px;
-    background:gray;
-    /* display:flex;
-    align-items:center;
-    justify-content:center; */
-    /* margin-left:  50%;
-    margin-right: 50%; */
-    background-color:white;
-    background-clip: content-box;
-    border-radius: 2px;
-
-  }
-
-@media only screen and (min-width: 600px) {
-    flickity-slide{
-      color:#fff;
-      font-size:26px;
-      display:block;
-      width:90%;
-      height:200px;
-      margin-right:50px;
-      background:gray;
-      /* display:flex;
-      align-items:center;
-      justify-content:center; */
-      /* margin-left:  50%;
-      margin-right: 50%; */
-      background-color:white;
-      background-clip: content-box;
-      border-radius: 2px;
-
-    }
-
-  @media only screen and (min-width: 768px) {
-        flickity-slide{
-          color:#fff;
-          font-size:26px;
-          display:block;
-          width:90%;
-          height:200px;
-          margin-right:50px;
-          background:gray;
-          /* display:flex;
-          align-items:center;
-          justify-content:center; */
-          /* margin-left:  50%;
-          margin-right: 50%; */
-          background-color:white;
-          background-clip: content-box;
-          border-radius: 2px;
-
-        }
-
+.flickity-card{
+  background-color: white;
 }

@@ -3,8 +3,8 @@
   height: 138px;
   color: white;
   letter-spacing: .75px;
-  background: rgb(19,7,70);
-  background: linear-gradient(180deg, rgba(19,7,70,1) 0%, rgba(19,7,70,1) 29%, rgba(55,8,28,1) 100%);
+  background: rgb(55,8,28);
+  background: linear-gradient(8deg, rgba(55,8,28,1) 0%, rgba(19,7,70,1) 100%);
 }
 
 .icon-bar{

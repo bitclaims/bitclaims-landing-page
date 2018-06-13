@@ -50,6 +50,7 @@ flickity-slide{
 .flickity-card{
     color:#fff;
       background-color:white;
+      height:250px;
 }
 
 .timeline-card-header{
@@ -66,14 +67,16 @@ flickity-slide{
 
 
 .dot {
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     background-color: white;
     border-radius: 50%;
     display: inline-block;
     margin: auto;
     z-index: 100;
-margin-top: 10px;
+    position: absolute;
+    left:50%;
+    bottom: 11px;
 }
 
 .connected-dots{
@@ -86,4 +89,36 @@ margin-top: 10px;
 
 .flickity-viewport{
   height: 400px !important;
+}
+
+
+.timeline-row{
+  margin-top: 30px;
+
+}
+
+.timeline-line{
+  height: 0px;
+  border: solid 1px #eeeff6;
+  background-color: #eeeff6;
+}
+
+/* center cards can just stretch right  */
+.timeline-line-center{
+  width: 120%;
+}
+
+
+/* last card only goes half way */
+.timeline-line-left{
+  width: 50%;
+}
+
+
+.timeline-line-right{
+
+  width: 100%;
+  position: absolute;
+  left:50%;
+
 }

@@ -121,27 +121,55 @@ flickity-slide {
 }
 
 
-@media only screen and (max-width: 600px) {
-  flickity-slide{
-
-    width:90%;
-
-
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  flickity-slide {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .flickity-card{
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
-@media only screen and (min-width: 600px) {
-    flickity-slide{
+  .timeline-card-header{
+    font-size: 18px;
+  }
+  .timeline-card-content{
+    font-size: 14px;
+  }
+}
 
-      width:90%;
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  flickity-slide {
+    width: 100%;
+  }
+  .flickity-card{
+    margin-left: 20px;
+    margin-right: 40px;
+  }
 
-    }
+}
 
-  @media only screen and (min-width: 768px) {
-        flickity-slide{
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  flickity-slide {
+    width: 80%;
+  }
+}
 
-          width:90%;
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  flickity-slide {
+    width: 60%;
+  }
+}
 
+/* Large Devices, Wide Screens */
 
-        }
-
+@media only screen and (min-width: 1200px) {
+  flickity-slide {
+    width: 50%;
+  }
 }

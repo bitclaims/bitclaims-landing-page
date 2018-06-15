@@ -2,7 +2,7 @@
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 36px;
   color: #595c6e;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .timeline-background {

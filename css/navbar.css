@@ -115,6 +115,7 @@ color: #63549d !important;
     height: 13%;
     display: flex;
     align-items: center;
+    border: solid 1px #eeeff6;
     /* justify-content: center; */
     width: 100%;
   }

@@ -58,3 +58,12 @@ document.body.scrollTop = 7100; // For Safari
 document.documentElement.scrollTop = 7100; // For Chrome, Firefox, IE and Opera
 
 }
+
+
+function emailFunction(){
+  if(event.keyCode==13){
+    return 'https://bitclaims.io/BitClaims_WhitePaper_2.FINAL.pdf';
+  }
+}
+
+

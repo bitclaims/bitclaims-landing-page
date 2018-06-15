@@ -84,11 +84,16 @@ color: #63549d !important;
 
 
 
-.nav-text{
+/* .nav-text{
  margin-left: 13%;
 }
+ */
 
-
+ .collapsing {
+     -webkit-transition: none;
+     transition: none;
+     display: none;
+ }
 
 /* Small Devices, Tablets */
 
@@ -117,4 +122,8 @@ color: #63549d !important;
     font-size: 18px;
     width: 100%;
   }
+  .nav-text{
+   margin-left: 13%;
+  }
+
 }

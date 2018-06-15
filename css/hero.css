@@ -193,7 +193,16 @@ outline: none;
 .tras:hover { --x: 100%; }
 
 
+.gradient-border{
+  background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);
+  border-radius: 4px;
+  padding: 1px;
+}
 
+.email-container{
+  height: 45px; margin-left: 0%; border: 1px solid
+                    rgba(147, 126, 234, 0.78); border-radius: 4px; 
+}
 
 .tras {
   flex: 1 1 auto;

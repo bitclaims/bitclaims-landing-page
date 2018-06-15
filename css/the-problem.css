@@ -19,8 +19,8 @@
 }
 
 .The-problem-fullwidth {
-  background: rgb(131,58,180);
-background: linear-gradient(160deg, rgba(131,58,180,0) 0%, rgba(239,189,189,0.8827906162464986) 28%);
+  background: rgb(255,255,255);
+  background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(239,189,189,1) 100%);
 }
 
 .Unsustainable-Pricing {
@@ -39,12 +39,12 @@ background: linear-gradient(160deg, rgba(131,58,180,0) 0%, rgba(239,189,189,0.88
   color: #7c7f8f;
 }
 
-.spacer {
+.spacer { /*Messes up the mobile view*/
   height: 70px;
 }
 
 .mobile-spacer {
-  height: 20px;
+  height: 30px;
 }
 
 .row-eq-height {

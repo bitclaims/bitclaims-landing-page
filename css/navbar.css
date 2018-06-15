@@ -76,7 +76,15 @@ color: #63549d !important;
   background-color: #f9fafb;
   color: #a8acb8;
   border-bottom: 1px solid #eeeff6;
+  
 }
+
+.item:hover { 
+  background-color: #000000;
+  opacity:1;
+ }
+
+
 
 .nav-text{
  margin-left: 13%;

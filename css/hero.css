@@ -22,7 +22,7 @@
   line-height: 1.05;
   color: #63549d;
   margin-top: 10%;
-  
+
 }
 
 .Join-the-global-community-thats-making-healthcare {
@@ -201,23 +201,45 @@ outline: none;
 
 .email-container{
   height: 45px; margin-left: 0%; border: 1px solid
-                    rgba(147, 126, 234, 0.78); border-radius: 4px; 
+                    rgba(147, 126, 234, 0.78); border-radius: 4px;
 }
 
 .tras {
   flex: 1 1 auto;
-  
+
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background: linear-gradient(141deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%;
   color: white;
  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
- 
- 
  }
 
- 
+ #mce-EMAIL{
+  height: 100%;
+  border-style: none;
+  font-size: 16px;
+  color: rgba(147, 126, 234, 0.78);
+ }
+
+ ::placeholder {
+   font-size: 16px;
+   color: rgba(147, 126, 234, 0.78);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 16px;
+color: rgba(147, 126, 234, 0.78);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-size: 16px;
+color: rgba(147, 126, 234, 0.78);
+}
+
+ .email-input{
+   height: 100%; background-color: white;
+ }
 
 .social-icon{
   color: white;
@@ -240,4 +262,30 @@ input[type=text] {
   appearance: none;
 }
 
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] { font-size: 16px; }
+.email-icon-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  z-index: 99 !important;
+}
+
+.whitepaper-form-button{
+  height: 100%;
+  background: rgb(168,153,230);
+  background: linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);
+  font-size: 16px; color:white; border-radius: 2px;
+}
+
+.whitepaper-form-container{
+height: 100%;
+padding-left: 0px;
+padding-right: 0px;
+}
+
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"],
+ input[type="datetime-local"], input[type="date"], input[type="month"],
+  input[type="time"], input[type="week"], input[type="number"],
+  input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
+   input[type="color"] { font-size: 16px; }

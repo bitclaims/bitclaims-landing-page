@@ -94,6 +94,15 @@ angular.element(document).ready(function() {
       register($form)
     })
   }
+
+  var $mobileform = $('#mobile-mc-embedded-subscribe-form')
+  if ($mobileform.length > 0) {
+    $('form input[type="submit"]').bind('click', function(event) {
+      if (event) event.preventDefault()
+      mobileRegister($mobileform)
+    })
+  }
+
 });
 
 });
@@ -127,6 +136,39 @@ function register($form) {
         $('#subscribe-result').css('color', '#ff8282')
         $('#subscribe-result').html('<p>' + data.msg.substring(0) + '</p>')
         window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
+      }
+    }
+  })
+};
+
+function mobileRegister($mobileform) {
+  $('#mobile-mc-embedded-subscribe').val('Sending...');
+  $.ajax({
+    type: $mobileform.attr('method'),
+    url: $mobileform.attr('action'),
+    data: $mobileform.serialize(),
+    cache: false,
+    dataType: 'json',
+    contentType: 'application/json; charset=utf-8',
+    error: function (err) { alert('Could not connect to the registration server. Please try again later.') },
+    success: function (data) {
+      $('#mobile-mc-embedded-subscribe').val('WHITE PAPER')
+      if (data.result === 'success') {
+        // Yeahhhh Success
+        console.log(data.msg)
+        $('#mce-EMAIL').css('borderColor', '#ffffff')
+        $('#subscribe-result').css('color', 'rgb(53, 114, 210)')
+        $('#subscribe-result').html('<p>Thank you for subscribing. We have sent you a confirmation email.</p>')
+        $('#mce-EMAIL').val('');
+          window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
+      } else {
+        // Something went wrong, do something to notify the user.
+        console.log(data.msg)
+        $('#mce-EMAIL').css('borderColor', '#ff8282')
+        $('#subscribe-result').css('color', '#ff8282')
+        $('#subscribe-result').html('<p>' + data.msg.substring(0) + '</p>')
+        // window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
+      window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
       }
     }
   })

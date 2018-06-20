@@ -38,6 +38,8 @@ padding: 1px;
   background: rgb(168,153,230);
   background: linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);
    width: 33%;
+   padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .tablet-whitepaper-button{
@@ -48,6 +50,7 @@ padding: 1px;
   background-color:rgba(148, 126, 234, 0.000);
   text-align: center;
   color: white;
+  margin-top: 5px !important;
 }
 
 .tablet-email-container{

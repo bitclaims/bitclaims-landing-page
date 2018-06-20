@@ -266,7 +266,6 @@ input[type=text] {
   height: 100%;
   display: flex;
   align-items: center;
-  background-color: white;
   z-index: 99 !important;
 }
 
@@ -281,6 +280,11 @@ input[type=text] {
 height: 100%;
 padding-left: 0px;
 padding-right: 0px;
+}
+
+.chimp-bot{
+  position: absolute;
+   left: -5000px;
 }
 
 

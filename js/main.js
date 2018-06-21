@@ -157,16 +157,16 @@ function mobileRegister($mobileform) {
         // Yeahhhh Success
         console.log(data.msg)
         $('#mce-EMAIL').css('borderColor', '#ffffff')
-        $('#subscribe-result').css('color', 'rgb(53, 114, 210)')
-        $('#subscribe-result').html('<p>Thank you for subscribing. We have sent you a confirmation email.</p>')
+        $('#mobile-subscribe-result').css('color', 'rgb(53, 114, 210)')
+        $('#mobile-subscribe-result').html('<p>Thank you for subscribing. We have sent you a confirmation email.</p>')
         $('#mce-EMAIL').val('');
           window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
       } else {
         // Something went wrong, do something to notify the user.
         console.log(data.msg)
         $('#mce-EMAIL').css('borderColor', '#ff8282')
-        $('#subscribe-result').css('color', '#ff8282')
-        $('#subscribe-result').html('<p>' + data.msg.substring(0) + '</p>')
+        $('#mobile-subscribe-result').css('color', '#ff8282')
+        $('#mobile-subscribe-result').html('<p>' + data.msg.substring(0) + '</p>')
         // window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
       window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
       }

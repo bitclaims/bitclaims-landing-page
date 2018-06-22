@@ -135,7 +135,9 @@ function register($form) {
         $('#mce-EMAIL').css('borderColor', '#ff8282')
         $('#subscribe-result').css('color', '#ff8282')
         $('#subscribe-result').html('<p>' + data.msg.substring(0) + '</p>')
-        window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
+        // window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
+
+         window.location.href = 'BitClaims_WhitePaper_2.FINAL.pdf';
       }
     }
   })

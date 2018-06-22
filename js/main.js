@@ -81,16 +81,34 @@ app.service('anchorSmoothScroll', function(){
 
 app.controller('myCtrl', function($scope, $location, anchorSmoothScroll,$http,$sce) {
 
+  $scope.Save = function($event){
+
+    $event.preventDefault();
+
+
+
+    return false;
+}
+
   $scope.gotoElement = function (eID){
     $location.hash('bottom');
     anchorSmoothScroll.scrollTo(eID);
   };
 
 angular.element(document).ready(function() {
+
+  $("#mc-embedded-subscribe").submit(function(event){
+     event.preventDefault();
+     console.log('test');
+  });
+
   var $form = $('#mc-embedded-subscribe-form')
   if ($form.length > 0) {
     $('form input[type="submit"]').bind('click', function(event) {
-      if (event) event.preventDefault()
+      if (event){
+        event.preventDefault()
+        return false
+      }
       register($form)
     })
   }
@@ -135,9 +153,7 @@ function register($form) {
         $('#mce-EMAIL').css('borderColor', '#ff8282')
         $('#subscribe-result').css('color', '#ff8282')
         $('#subscribe-result').html('<p>' + data.msg.substring(0) + '</p>')
-        // window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
-
-         window.location.href = 'BitClaims_WhitePaper_2.FINAL.pdf';
+        window.open('BitClaims_WhitePaper_2.FINAL.pdf', 'name');
       }
     }
   })
@@ -152,7 +168,7 @@ function mobileRegister($mobileform) {
     cache: false,
     dataType: 'json',
     contentType: 'application/json; charset=utf-8',
-    error: function (err) { alert('Could not connect to the registration server. Please try again later.') },
+    error: function (err) {  },
     success: function (data) {
       $('#mobile-mc-embedded-subscribe').val('WHITE PAPER')
       if (data.result === 'success') {

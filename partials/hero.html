@@ -66,13 +66,13 @@
                     <!-- end of whitepaper button-->
 
                     <div ng-show="mailchimp.result === 'error'" ng-cloak>
-  <span ng-bind-html="mailchimp.errorMessage"></span>
-</div>
+                      <span ng-bind-html="mailchimp.errorMessage"></span>
+                    </div>
 
-<!-- Show success message if MailChimp returned successfully. -->
-<div ng-show="mailchimp.result === 'success'" ng-cloak>
-  <span ng-bind-html="mailchimp.successMessage"></span>
-</div>
+                    <!-- Show success message if MailChimp returned successfully. -->
+                      <div ng-show="mailchimp.result === 'success'" ng-cloak>
+                        <span ng-bind-html="mailchimp.successMessage"></span>
+                    </div>
 
                     <!-- chimp-bot-->
                     <div class="chimp-bot">

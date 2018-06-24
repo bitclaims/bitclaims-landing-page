@@ -25,13 +25,16 @@
 
             <div id="mc_embed_signup">
               <form
-              action="https://bitclaims.us18.list-manage.com/subscribe/post-json?u=9695808bb95011a4c2652975b&id=fe978a34da&amp;id=fe978a34da&c=?"
-              method="get"
+              name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
               >
 
-                    <div class="row email-container">
+                    <div ng-hide="mailchimp.result === 'success'" class="row email-container">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='bitclaims'">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us18'">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='9695808bb95011a4c2652975b'">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='fe978a34da'">
 
                         <!--email icon-->
                         <div class="col-md-1 email-icon-container">
@@ -43,9 +46,10 @@
                       <div class="col-md-7 email-input">
                           <input
                             type="email"
-                            name="EMAIL"
+                            name="email"
+                            ng-model="mailchimp.EMAIL"
+                            placeholder="Email address"
                             id="mce-EMAIL"
-                            placeholder="MARIE@CURIE.COM"
                             required>
                       </div>
                       <!--end of email text field-->
@@ -53,14 +57,22 @@
                       <!--whitepaper button-->
                       <div class="col-md-4 whitepaper-form-container">
                         <input
-                        type="submit"
+                        ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)"
                         value="WHITE PAPER"
-                        name="subscribe"
                         id="mc-embedded-subscribe"
                         class="btn btn-block whitepaper-form-button">
                       </div>
                     </div>
                     <!-- end of whitepaper button-->
+
+                    <div ng-show="mailchimp.result === 'error'" ng-cloak>
+  <span ng-bind-html="mailchimp.errorMessage"></span>
+</div>
+
+<!-- Show success message if MailChimp returned successfully. -->
+<div ng-show="mailchimp.result === 'success'" ng-cloak>
+  <span ng-bind-html="mailchimp.successMessage"></span>
+</div>
 
                     <!-- chimp-bot-->
                     <div class="chimp-bot">

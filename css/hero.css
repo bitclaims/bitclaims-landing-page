@@ -1,10 +1,7 @@
 .phone {
-
   /* position: relative;
   right: 20%; */
-
 }
-
 
 .Radically-Affordable-Healthcare {
   /* height: 136px; */
@@ -22,7 +19,6 @@
   line-height: 1.05;
   color: #63549d;
   margin-top: 10%;
-
 }
 
 .Join-the-global-community-thats-making-healthcare {
@@ -40,8 +36,7 @@
 }
 
 .BitClaims-combines-direct-price-discovery-with-the {
-    /* text-align: left; */
-
+  /* text-align: left; */
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 17px;
   font-weight: normal;
@@ -75,23 +70,22 @@
   margin-bottom: 4%;
 }
 
-#mc_embed_signup{
-  background:#fff;
-  clear:left;
-  font:14px Helvetica,Arial,sans-serif;
-  width:100%;
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 100%;
 }
 
 .email {
   margin-bottom: 1%;
 }
 
-.mobileform{
-
-margin-bottom: 5%;
+.mobileform {
+  margin-bottom: 5%;
 }
 
-.email input{
+.email input {
   border-left-style: none;
 }
 
@@ -113,10 +107,10 @@ margin-bottom: 5%;
   background-image: linear-gradient(rgba(147, 126, 234, 0.78), rgba(147, 126, 234, 0.78)), linear-gradient(to top, rgba(123, 105, 195, 0), #eab5be 88%);
   color: #ffffff;
   font-family: 'IBM Plex Sans', sans-serif;
-    border-color: #b4a2fc;
-    border-radius: 5px;
-    padding-right: 30px;
-    padding-left: 30px;
+  border-color: #b4a2fc;
+  border-radius: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .Line {
@@ -139,34 +133,35 @@ margin-bottom: 5%;
   font-size: 16px;
 }
 
-.left-button{
+.left-button {
   padding-right: 2px
 }
 
-.right-button{
+.right-button {
   padding-left: 2px;
   padding-right: 0px;
 }
+
 .Aligner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.ark-icon{
-margin-left:10px;
+.ark-icon {
+  margin-left: 10px;
   margin-right: 10px;
 }
 
-.input-icon{
+.input-icon {
   border-right-style: none;
   border: solid 1px transparent;
   border-color: #b4a2fc;
   background-color: white;
 }
 
-.fa-envelope{
-  color:rgba(147, 126, 234, 0.78);
+.fa-envelope {
+  color: rgba(147, 126, 234, 0.78);
 }
 
 /* .nopadding {
@@ -175,81 +170,85 @@ margin-left:10px;
 } */
 
 .github-discord:focus {
-outline: none;
+  outline: none;
 }
 
-.icon-buttons{
+.icon-buttons {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.find-us-on-github{
+.find-us-on-github {
   /* padding-left: 3%; */
-  color:white;
+  color: white;
   padding-right: 26px;
-
 }
 
-.tras:hover { --x: 100%; }
+.tras:hover {
+  --x: 100%;
+}
 
-
-.gradient-border{
-  background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);
+.gradient-border {
+  background-image: linear-gradient(141deg, rgba(168, 153, 230, 1) 0%, rgba(234, 181, 190, 1) 100%);
   border-radius: 4px;
   padding: 1px;
 }
 
-.email-container{
-  height: 45px; margin-left: 0%; border: 1px solid
-                    rgba(147, 126, 234, 0.78); border-radius: 4px;
+.email-container {
+  height: 45px;
+  margin-left: 0%;
+  border: 1px solid rgba(147, 126, 234, 0.78);
+  border-radius: 4px;
 }
 
 .tras {
   flex: 1 1 auto;
-
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background: linear-gradient(141deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%;
   color: white;
- /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
- }
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+}
 
- #mce-EMAIL{
+#mce-EMAIL {
   height: 100%;
   border-style: none;
   font-size: 16px;
   color: rgba(147, 126, 234, 0.78);
- }
-
- ::placeholder {
-   font-size: 16px;
-   color: rgba(147, 126, 234, 0.78);
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+::placeholder {
   font-size: 16px;
-color: rgba(147, 126, 234, 0.78);
+  color: rgba(147, 126, 234, 0.78);
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   font-size: 16px;
-color: rgba(147, 126, 234, 0.78);
+  color: rgba(147, 126, 234, 0.78);
 }
 
- .email-input{
-   height: 100%; background-color: white;
- }
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-size: 16px;
+  color: rgba(147, 126, 234, 0.78);
+}
 
-.social-icon{
+.email-input {
+  height: 100%;
+  background-color: white;
+}
+
+.social-icon {
   color: white;
   padding-left: 12px;
   padding-right: 12px;
 }
 
 .btn.focus, .btn:focus, .btn:hover {
-    color: #7b69c3;
-    text-decoration: none;
+  color: #7b69c3;
+  text-decoration: none;
 }
 
 .Aligner-item--bottom {
@@ -262,64 +261,59 @@ input[type=text] {
   appearance: none;
 }
 
-.email-icon-container{
+.email-icon-container {
   height: 100%;
   display: flex;
   align-items: center;
   z-index: 99 !important;
 }
 
-.whitepaper-form-button{
+.whitepaper-form-button {
   height: 100%;
-  background: rgb(168,153,230);
-  background: linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);
-  font-size: 16px; color:white; border-radius: 2px;
+  background: rgb(168, 153, 230);
+  background: linear-gradient(141deg, rgba(168, 153, 230, 1) 0%, rgba(234, 181, 190, 1) 100%);
+  font-size: 16px;
+  color: white;
+  border-radius: 2px;
 }
 
-.whitepaper-form-container{
-height: 100%;
-padding-left: 0px;
-padding-right: 0px;
+.whitepaper-form-container {
+  height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.chimp-bot{
+.chimp-bot {
   position: absolute;
-   left: -5000px;
+  left: -5000px;
 }
 
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+  font-size: 16px;
+}
 
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"],
- input[type="datetime-local"], input[type="date"], input[type="month"],
-  input[type="time"], input[type="week"], input[type="number"],
-  input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
-   input[type="color"] { font-size: 16px; }
+.modal-header {
+  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-size: 38px; */
+  font-weight: 500;
+  color: #222436;
+}
 
+.download {
+  background-color: #ffffff;
+  border: solid 1px transparent;
+  border-color: #b4a2fc;
+  color: #7b69c3;
+  height: 46px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-size: 16px; */
+  display: inline-flex;
+  align-items: center;
+  /* justify-content: center; */
+}
 
-   .modal-header {
-     font-family: 'IBM Plex Sans', sans-serif;
-     /* font-size: 38px; */
-     font-weight: 500;
-     color: #222436;
-   }
-
-   .download{
-
-background-color: #ffffff;
-border: solid 1px transparent;
-border-color: #b4a2fc;
-color: #7b69c3;
-height: 46px;
-font-family: 'IBM Plex Sans', sans-serif;
-/* font-size: 16px; */
-display: inline-flex;
-align-items: center;
-/* justify-content: center; */
-   }
-
-
-   .center-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  
+.center-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

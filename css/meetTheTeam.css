@@ -1,20 +1,21 @@
-.team-container{
-  color:  #63549d;
+.team-container {
+  color: #63549d;
 }
-.position{
-  font-size: 130%; 
+
+.position {
+  font-size: 130%;
   color: #7c7f8f;
 }
 
-.end-breaks{
+.end-breaks {
   margin-top: 40%;
 }
 
-.fa-lg{
-  color:  #63549d;
+.fa-lg {
+  color: #63549d;
 }
 
-.img-circle{
+.img-circle {
   height: 40%;
-   width: 40%; 
+  width: 40%;
 }

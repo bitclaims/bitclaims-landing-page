@@ -18,7 +18,7 @@ box-shadow: 0 1px 0 0 #d3d4de;
 
 .bitclaims-navbar li{
   font-family: 'IBM Plex Sans', sans-serif;
-font-size: 18px;
+
 
 font-weight: 500;
 font-style: normal;
@@ -67,25 +67,64 @@ color: #63549d !important;
 .navbar{
   background-color: white;
   margin-bottom: 20px;
-  
+
 }
-.item{
-  
-  height: 109px;
+
+/* .item{
   font-size: 18px;
   background-color: #f9fafb;
   color: #a8acb8;
   border-bottom: 1px solid #eeeff6;
-  
-}
+} */
 
-.item:hover { 
+/* .item:hover {
   background-color: #000000;
   opacity:1;
+ } */
+
+
+
+/* .nav-text{
+ margin-left: 13%;
+}
+ */
+
+ .collapsing {
+     -webkit-transition: none;
+     transition: none;
+     display: none;
  }
 
+/* Small Devices, Tablets */
 
+@media only screen and (max-width: 767px) {
+  .navbar-collapse.collapse {
+    transition: height 0.2s;
+  }
+  .navbar-collapse.collapsing {
+    height: 0 !important;
+  }
+  .navbar-collapse.collapse.in {
+    max-height: none;
+    height: 100vh;
+  }
+  .navbar-nav {
+    height: 100%;
+  }
+  .bitclaims-navbar li {
+    height: 13%;
+    display: flex;
+    align-items: center;
+    border: solid 1px #eeeff6;
+    /* justify-content: center; */
+    width: 100%;
+  }
+  .bitclaims-navbar li a {
+    font-size: 18px;
+    width: 100%;
+  }
+  .nav-text{
+   margin-left: 13%;
+  }
 
-.nav-text{
- margin-left: 13%;
 }

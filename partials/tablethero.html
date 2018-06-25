@@ -10,7 +10,7 @@
 
         <img src="i.bitclaims@3x.png" class="img-responsive mobileform" style="width: 20%; margin-top: 15%; ">
 
-        <!-- <img class="hero-logo" alt="BitClaims" src="img/i.bitclaims@3x.png" width="77" height="77"> -->
+
         <div class="Radically-Affordable-Healthcare-mobile">Radically Affordable Healthcare</div>
         <div class="mobile-spacer"></div>
         <div class="Join-the-global-community-thats-making-healthcare-mobile"><b>Join the global community that's making Healthcare accessible to everyone</b></div>
@@ -19,8 +19,7 @@
           BitClaims combines direct price discovery with the power of blockchain technology to bring you the most affordable healthcare of all time
         </div>
 
-        <!--<img src="img\illustration.mercy-medical-card@3x.png" class="img-responsive mobileform">-->
-        <!-- <div class="spacer"></div> -->
+
 
         <div style="font-size: 14px; font-family: 'IBM Plex Sans', sans-serif;  color: #7c7f8f; margin-top: 10%;">
           ENTER EMAIL TO VIEW WHITEPAPER
@@ -29,11 +28,7 @@
           <!-- End of left side Hero-->
           <div class="col-md-8">
 
-            <!-- <div class="input-group email mobileform">
-              <span class="input-group-addon input-icon" id="basic-addon2"><i class="fas fa-envelope fa-2x"></i></span>
-              <input style="border-radius: 0px;" type="text" class=" github-discord" aria-describedby="basic-addon2">
-              <span class="input-group-addon signup-button" id="basic-addon2">SIGN UP</span>
-            </div> -->
+
 
           <!-- Begin MailChimp Signup Form -->
           <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -42,61 +37,94 @@
             /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
           </style>
-          <div id="mc_embed_signup" >
-            <form style= "padding-bottom:0px; " action="https://BitClaims.us18.list-manage.com/subscribe/post?u=9695808bb95011a4c2652975b&amp;id=fe978a34da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup">
 
-              <div style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);
-                padding: 2px; border-radius: 4px; padding: 1px;">
-              <div class="row" style= "height: 45px; width:100%;  margin-left: 0%; border: 1px solid rgba(147, 126, 234, 0.78); border-radius: 4px; ">
+            <form
+            name="MailchimpSubscriptionForm"
+            ng-controller="MailchimpSubscriptionCtrl"
+            id="mobile-mc-embedded-subscribe-form"
+            class="validate tablet-form"
+            >
 
-                <div class = "col-xs-1" style= " height: 100%;  display: flex; align-items: center; width: 10%; background-color: white;  z-index: 99 !important; " >
+              <div class="tablet-top-form-container">
+
+              <div ng-hide="mailchimp.result === 'success'" class="row tablet-form-container">
+                <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='bitclaims'">
+                <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us18'">
+                <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='9695808bb95011a4c2652975b'">
+                <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='fe978a34da'">
+
+                <!-- email icon -->
+                <div class = "col-xs-1 tablet-email-icon">
                     <i class="fas fa-envelope fa-2x" ></i>
                 </div>
 
-                <div class = " col-xs-5" style= " height: 100%; width: 57%; background-color:white;">
-                  <input type="text" onfocus="this.value=''" value="MARIE@CURIEL.COM"  style ="height: 100%; width: 110%; border-style: none; color: rgba(147, 126, 234, 0.78); "  name="EMAIL" class="email"id="mce-EMAIL"  onKeyDown="emailFunction()" required>
+
+                <!-- end of  email icon -->
+
+                <!-- email text field -->
+                <div class="col-xs-5 tablet-email-container" >
+                  <input
+                  type="email"
+                  name="email"
+                  ng-model="mailchimp.EMAIL"
+                  placeholder="Email address"
+                  style ="height: 100%; width: 110%; border-style: none; color: rgba(147, 126, 234, 0.78); font-size:16px; "
+                  class="email tablet-email-text-field"
+                  id="mce-EMAIL"
+                  required>
                 </div>
+                <!--end email text field -->
 
-                <div class = "col-xs-4 " style= " height: 100%;background: rgb(168,153,230);
-                background: linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);; width: 33%; " >
+                <div class="col-xs-4 tablet-whitepaper-container">
                   <!-- It's messed up on iphone5-->
-                 <input type="submit"   value="WHITE PAPER" name="subscribe" id="mc-embedded-subscribe" style ="margin-left: -20px;height: 100%; width: 150%; font-size: 90%; background-color:rgba(148, 126, 234, 0.000); text-align: center;  color: white; " class="button">
-                </div></div>
-            <!--
-                    <div class = "col-lg-2" style= " height: 100%; " >
-                        <input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" style ="height: 100%; width: 225%; background-color:rgba(147, 126, 234, 0.78); " class="button">
-                    </div>
-
-                  </div>-->
-
-
+                 <input
+                 type="button"
+                 ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)"
+                 value="Whitepaper"
+                 name="subscribe"
+                 id="mobile-mc-embedded-subscribe"
+                 class="button tablet-whitepaper-button">
+                </div>
+              </div>
 
             </div>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9695808bb95011a4c2652975b_fe978a34da" tabindex="-1" value=""></div>
+            <div ng-show="mailchimp.result === 'error'" ng-cloak>
+              <span ng-bind-html="mailchimp.errorMessage"></span>
+            </div>
+
+            <!-- Show success message if MailChimp returned successfully. -->
+              <div ng-show="mailchimp.result === 'success'" ng-cloak>
+                <span ng-bind-html="mailchimp.successMessage"></span>
+            </div>
+          <div
+          style="position: absolute; left: -5000px;"
+          aria-hidden="true"
+          >
+          <input
+           type="text"
+           name="b_9695808bb95011a4c2652975b_fe978a34da"
+           tabindex="-1"
+           value="">
+         </div>
 
 
           </form>
         </div>
 
         <div id="mc_embed_signup" >
-            <form action="https://BitClaims.us18.list-manage.com/subscribe/post?u=9695808bb95011a4c2652975b&amp;id=fe978a34da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-
-
-
-
+            <!-- <form action="https://BitClaims.us18.list-manage.com/subscribe/post?u=9695808bb95011a4c2652975b&amp;id=fe978a34da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> -->
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9695808bb95011a4c2652975b_fe978a34da" tabindex="-1" value=""></div>
 
 
-            </form>
+            <!-- </form> -->
           </div>
 
 
             <div class="row" >
-              <div class="col-md-6  mobileform ">
-                  <div style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);
-                  padding: 2px; border-radius: 4px; padding: 1px;">
+              <div class="col-md-6 mobileform ">
+                  <div style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);padding: 2px; border-radius: 4px; padding: 1px;">
                 <button type="button" class="btn github-discord  btn-block icon-buttons" >
                     <i class="fab fa-github fa-2x social-icon" style="color: #7b69c3;"></i>
                     <span class="find-us-on-github" > <a style="color:#7b69c3" href="https://github.com/bitclaims" target="_blank">FIND US ON GITHUB</a></span>
@@ -105,8 +133,7 @@
               </div>
 
               <div class="col-md-6 email mobileform ">
-                <div style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);
-                padding: 2px; border-radius: 4px; padding: 1px;">
+                <div style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);  padding: 2px; border-radius: 4px; padding: 1px;">
                 <button type="button" class="btn github-discord  btn-block icon-buttons" >
                     <i class="fab fa-discord fa-2x social-icon" style="color: #7b69c3;"></i>
                     <span  class="find-us-on-github"> <a style="color:#7b69c3" href="https://discord.gg/jtZjJnd" target="_blank"> JOIN US ON DISCORD</a></span>
@@ -150,6 +177,10 @@
       <!-- <div class="col-sm-3 test Aligner alight-right">
 
       </div> -->
+      <div class="container">
+        <span id="mobile-subscribe-result"></span>
+      </div>
+
 
       <div class="col-sm-12 text-center test Aligner" class="supported-by-the-ark-foundation " style="margin-top: 10%; ">
         <img src="img\i.ark.png" class="ark-icon" alt=""> SUPPORTED BY ARK LABS
@@ -164,6 +195,20 @@
     <div class="spacer"></div>
     <div class="spacer"></div>
     <!-- End of Supported by ARK foundation Section -->
+    <div class="row">
+      <div class="col-md-2">
+
+      </div>
+      <div class="col-md-8">
+          <!-- <img src="illustration-high-level@3x.png" class="img-responsive" alt=""> -->
+      </div>
+
+
+      <div class="col-md-2">
+
+      </div>
+    </div>
+    <div class="spacer"></div>
 
   </div>
 </section>

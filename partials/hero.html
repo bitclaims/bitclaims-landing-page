@@ -23,88 +23,86 @@
           <!-- End of left side Hero-->
           <div class="col-md-8">
 
-            <!-- <div class="input-group email">
-              <span class="input-group-addon input-icon" id="basic-addon2"><i class="fas fa-envelope fa-2x"></i></span>
-              <input type="text" class=" github-discord" aria-describedby="basic-addon2">
-              <span class="input-group-addon signup-button" id="basic-addon2">SIGN UP</span>
-            </div> -->
+            <div id="mc_embed_signup">
+              <form
+              name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              >
 
-            <!-- Begin MailChimp Signup Form -->
-            
-           
-            
-            
-            <div id="mc_embed_signup" >
-                
-              <form action="https://BitClaims.us18.list-manage.com/subscribe/post?u=9695808bb95011a4c2652975b&amp;id=fe978a34da" href= "https://bitclaims.io/BitClaims_WhitePaper_2.FINAL.pdf"method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div ng-hide="mailchimp.result === 'success'" class="row email-container">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='bitclaims'">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us18'">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='9695808bb95011a4c2652975b'">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='fe978a34da'">
 
-                <!--<div class ="gradient-border">-->
-                
-                    <div class= "row email-container">
-                        <div class = "col-md-1" style= " height: 100%; display: flex; align-items: center;   background-color: white; z-index: 99 !important; " >
-                            <i class="fas fa-envelope fa-2x" ></i>
-
+                        <!--email icon-->
+                        <div class="col-md-1 email-icon-container">
+                            <i class="fas fa-envelope fa-2x"></i>
                         </div>
-                      <div class = "col-md-7" style= " height: 100%; background-color: white; ">
-                          <input type="text" onfocus="this.value=''" value="MARIE@CURIE.COM" style ="height: 100%; border-style: none;  font-size: 16px;color: rgba(147, 126, 234, 0.78)"  name="EMAIL" onKeyDown="emailFunction()
-"class="email"id="mce-EMAIL" required>
+                        <!--end of email icon-->
+
+                      <!--email text field-->
+                      <div class="col-md-7 email-input">
+                          <input
+                            type="email"
+                            name="email"
+                            ng-model="mailchimp.EMAIL"
+                            placeholder="Email address"
+                            id="mce-EMAIL"
+                            required>
                       </div>
-                      
-                      <div class = "col-md-4" style= " height: 100%;padding-left: 0px;padding-right: 0px;" >
-                         
-                        <input type="submit" value="WHITE PAPER"  name="subscribe"  style ="height: 100%; background: rgb(168,153,230);
-                          background: linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);font-size: 16px; color:white; border-radius: 2px; " class="btn btn-block">
-                          <!-- <input  type="submit"  value="SIGN UP" name="subscribe"> -->
+                      <!--end of email text field-->
+
+                      <!--whitepaper button-->
+                      <div class="col-md-4 whitepaper-form-container">
+                        <input
+                        ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)"
+                        value="WHITE PAPER"
+                        id="mc-embedded-subscribe"
+                        class="btn btn-block whitepaper-form-button">
                       </div>
                     </div>
+                    <!-- end of whitepaper button-->
 
-                   
+                    <div ng-show="mailchimp.result === 'error'" ng-cloak>
+                      <span ng-bind-html="mailchimp.errorMessage"></span>
+                    </div>
 
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9695808bb95011a4c2652975b_fe978a34da" tabindex="-1" value=""></div>
-                 <!-- </div>-->
-                 
+                    <!-- Show success message if MailChimp returned successfully. -->
+                      <div ng-show="mailchimp.result === 'success'" ng-cloak>
+                        <span ng-bind-html="mailchimp.successMessage"></span>
+                    </div>
 
+                    <!-- chimp-bot-->
+                    <div class="chimp-bot">
+                    <input type="text" name="b_9695808bb95011a4c2652975b_fe978a34da" tabindex="-1" value="">
+                  </div>
 
               </form>
-              
+
             </div>
-            
+
 
             <!--End mc_embed_signup-->
 
             <div class="row">
               <div class="col-md-6 nopadding left-button">
-
-                <button type="button" class="btn github-discord tras btn-block icon-buttons" style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%); 
-                ">
-
+                <button type="button" class="btn github-discord tras btn-block icon-buttons" style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);">
                     <i class="fab fa-github fa-2x social-icon"></i>
-
                         <span class="find-us-on-github" > <a style="color:white;" href="https://github.com/bitclaims" target="_blank" >FIND US ON GITHUB</a></span>
-
-
                   </button>
               </div>
-
               <div class="col-md-6 nopadding right-button">
-                <button type="button" class="btn  github-discord tras  btn-block icon-buttons" style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%); 
-                ">
-
+                <button type="button" class="btn  github-discord tras  btn-block icon-buttons" style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);">
                     <i class="fab fa-discord fa-2x social-icon"></i>
-
                     <span  class="find-us-on-github"> <a style="color:white;" href="https://discord.gg/jtZjJnd" target="_blank"> JOIN US ON DISCORD</a></span>
-
-
                   </button>
               </div>
-
             </div>
-
+              <span id="subscribe-result"></span>
           </div>
-
         </div>
-
       </div>
       <!-- End of left side Hero-->
 
@@ -113,10 +111,6 @@
         <img class="phone img-responsive " src="img\croppedPhone.png"  alt="dd">
       </div>
 
-     <!-- <div class="col-md-4 Aligner-item Aligner-item--bottom hidden-sm hidden-xs" style="width: 70%;">
-        <img class="phone img-responsive " src="img\image.iphonemock@3x.png" alt="dd">
-      </div>-->
-      <!-- End of right side Hero-->
 
     </div>
 
@@ -138,8 +132,21 @@
       </div>
 
     </div>
+      <div class="spacer"></div>
+<!-- <div class="row">
+  <div class="col-md-2">
 
-    <div class="spacer"></div>
+  </div>
+  <div class="col-md-8">
+      <img src="illustration-high-level@3x.png" class="img-responsive" alt="">
+  </div>
+
+
+  <div class="col-md-2">
+
+  </div>
+</div>
+    <div class="spacer"></div> -->
     <!-- End of Supported by ARK foundation Section -->
 
   </div>

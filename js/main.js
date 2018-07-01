@@ -81,14 +81,46 @@ app.service('anchorSmoothScroll', function(){
   $rootScope.src = 'https://upload.wikimedia.org/wikipedia/commons/3/30/Nuvola_filesystems_services.svg';
 }])
 
+.directive( 'goClick', function ( $window ) {
+    return function ( scope, element, attrs ) {
+      var path;
+  
+      attrs.$observe( 'goClick', function (val) {
+        path = val;
+      });
+  
+      element.bind( 'click', function () {
+        scope.$apply( function () {
+            $window.location.href = path
+        });
+      });
+    };
+  });
 
 
 
-app.controller('myCtrl', function($scope, $location, anchorSmoothScroll,$http,$sce) {
+
+app.controller('myCtrl', function($scope, anchorSmoothScroll,$route,$location, $timeout,jobs,$routeParams) {
   $scope.gotoElement = function (eID){
-    $location.hash('bottom');
-    anchorSmoothScroll.scrollTo(eID);
+    console.log($route.current.templateUrl);
+    // $location.hash('bottom');
+
+    
+        $location.path('/');
+        $timeout(function () {
+            anchorSmoothScroll.scrollTo(eID);
+        }, 200);
+    
+   
   };
+
+  $scope.jobs = jobs.list();
+
+  console.log($routeParams.id)
+  console.log($routeParams)
+  $scope.jobId = $routeParams
+
+
 
 
 });

@@ -6,7 +6,7 @@
 
 'use strict';
 
-angular.module('mailchimp', ['ng', 'ngResource', 'ngSanitize'])
+angular.module('mailchimp', ['ng', 'ngResource', 'ngSanitize','ngRoute'])
 
   /**
    * Form controller for a new Mailchimp subscription.

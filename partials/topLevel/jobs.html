@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div class="row">
+        <div class="Work-at-BitClaims">
+            Work at BitClaims
+        </div>
+    </div>
+
+    <div class="row">
+        <div ng-repeat="job in jobs track by $index" class="col-md-4 job-col">
+
+            <a ng-href="#/jobs/{{$index}}">
+                <div class="job-block">
+
+                    <div class="job-block-text">{{job.title}}</div>
+
+                    <div>
+                        <i class="fas fa-arrow-right fa-2x job-arrow"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

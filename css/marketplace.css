@@ -1,15 +1,13 @@
-.market-fluid{
+.market-fluid {
   background-color: #FAFAFA;
 }
 
-
 .Power-in-Numbers {
-
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 140%;
   color: #63549d;
   margin-bottom: 5%;
-margin-top: 5%;
+  margin-top: 5%;
 }
 
 .At-18-percent-of-Americas-economy-and-growing-2-p {
@@ -20,13 +18,12 @@ margin-top: 5%;
   color: #7c7f8f;
 }
 
-.market-image{
+.market-image {
   /* margin: 0 auto; */
   /* margin-right: 20% */
 }
 
-
-.pool-image{
+.pool-image {
   /* margin: 0 auto; */
   margin-right: 20%
 }

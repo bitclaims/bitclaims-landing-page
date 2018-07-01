@@ -13,10 +13,13 @@
 
         <div class="Radically-Affordable-Healthcare-mobile">Radically Affordable Healthcare</div>
         <div class="mobile-spacer"></div>
-        <div class="Join-the-global-community-thats-making-healthcare-mobile"><b>Join the global community that's making Healthcare accessible to everyone</b></div>
+        <div class="Join-the-global-community-thats-making-healthcare-mobile">
+          <b>Join the global community that's making Healthcare accessible to everyone</b>
+        </div>
 
         <div class="BitClaims-combines-direct-price-discovery-with-the ">
-          BitClaims combines direct price discovery with the power of blockchain technology to bring you the most affordable healthcare of all time
+          BitClaims combines direct price discovery with the power of blockchain technology to bring you the most affordable healthcare
+          of all time
         </div>
 
 
@@ -30,113 +33,102 @@
 
 
 
-          <!-- Begin MailChimp Signup Form -->
-          <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%; }
-            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+              #mc_embed_signup {
+                background: #fff;
+                clear: left;
+                font: 14px Helvetica, Arial, sans-serif;
+                width: 100%;
+              }
+
+              /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-          </style>
-          <div id="mc_embed_signup">
+            </style>
+            <div id="mc_embed_signup">
 
-            <form
-            name="MailchimpSubscriptionForm"
-            ng-controller="MailchimpSubscriptionCtrl"
-            id="mobile-mc-embedded-subscribe-form"
-            class="validate tablet-form"
-            >
+              <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" id="mobile-mc-embedded-subscribe-form" class="validate tablet-form">
 
-              <div class="tablet-top-form-container">
+                <div class="tablet-top-form-container">
 
-              <div ng-hide="mailchimp.result === 'success'" class="row tablet-form-container">
-                <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='bitclaims'">
-                <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us18'">
-                <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='9695808bb95011a4c2652975b'">
-                <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='fe978a34da'">
+                  <div ng-hide="mailchimp.result === 'success'" class="row tablet-form-container">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='bitclaims'">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us18'">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='9695808bb95011a4c2652975b'">
+                    <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='fe978a34da'">
 
-                <!-- email icon -->
-                <div class = "col-xs-1 tablet-email-icon">
-                    <i class="fas fa-envelope fa-2x" ></i>
+                    <!-- email icon -->
+                    <div class="col-xs-1 tablet-email-icon">
+                      <i class="fas fa-envelope fa-2x"></i>
+                    </div>
+
+
+                    <!-- end of  email icon -->
+
+                    <!-- email text field -->
+                    <div class="col-xs-5 tablet-email-container">
+                      <input type="email" name="email" ng-model="mailchimp.EMAIL" placeholder="Email address" style="height: 100%; width: 110%; border-style: none; color: rgba(147, 126, 234, 0.78); font-size:16px; "
+                        class="email tablet-email-text-field" id="mce-EMAIL" required>
+                    </div>
+                    <!--end email text field -->
+
+                    <div class="col-xs-4 tablet-whitepaper-container">
+                      <!-- It's messed up on iphone5-->
+                      <input type="button" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)" value="Whitepaper"
+                        name="subscribe" id="mobile-mc-embedded-subscribe" class="button tablet-whitepaper-button">
+                    </div>
+                  </div>
+
+                </div>
+                <div ng-show="mailchimp.result === 'error'" ng-cloak>
+                  <span ng-bind-html="mailchimp.errorMessage"></span>
+                </div>
+
+                <!-- Show success message if MailChimp returned successfully. -->
+                <div ng-show="mailchimp.result === 'success'" ng-cloak>
+                  <span ng-bind-html="mailchimp.successMessage"></span>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_9695808bb95011a4c2652975b_fe978a34da" tabindex="-1" value="">
                 </div>
 
 
-                <!-- end of  email icon -->
+              </form>
+            </div>
 
-                <!-- email text field -->
-                <div class="col-xs-5 tablet-email-container" >
-                  <input
-                  type="email"
-                  name="email"
-                  ng-model="mailchimp.EMAIL"
-                  placeholder="Email address"
-                  style ="height: 100%; width: 110%; border-style: none; color: rgba(147, 126, 234, 0.78); font-size:16px; "
-                  class="email tablet-email-text-field"
-                  id="mce-EMAIL"
-                  required>
-                </div>
-                <!--end email text field -->
-
-                <div class="col-xs-4 tablet-whitepaper-container">
-                  <!-- It's messed up on iphone5-->
-                 <input
-                 type="button"
-                 ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)"
-                 value="Whitepaper"
-                 name="subscribe"
-                 id="mobile-mc-embedded-subscribe"
-                 class="button tablet-whitepaper-button">
-                </div>
+            <div id="mc_embed_signup">
+              <!-- <form action="https://BitClaims.us18.list-manage.com/subscribe/post?u=9695808bb95011a4c2652975b&amp;id=fe978a34da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> -->
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_9695808bb95011a4c2652975b_fe978a34da" tabindex="-1" value="">
               </div>
 
+
+              <!-- </form> -->
             </div>
-            <div ng-show="mailchimp.result === 'error'" ng-cloak>
-              <span ng-bind-html="mailchimp.errorMessage"></span>
-            </div>
-
-            <!-- Show success message if MailChimp returned successfully. -->
-              <div ng-show="mailchimp.result === 'success'" ng-cloak>
-                <span ng-bind-html="mailchimp.successMessage"></span>
-            </div>
-          <div
-          style="position: absolute; left: -5000px;"
-          aria-hidden="true"
-          >
-          <input
-           type="text"
-           name="b_9695808bb95011a4c2652975b_fe978a34da"
-           tabindex="-1"
-           value="">
-         </div>
 
 
-          </form>
-        </div>
-
-        <div id="mc_embed_signup" >
-            <!-- <form action="https://BitClaims.us18.list-manage.com/subscribe/post?u=9695808bb95011a4c2652975b&amp;id=fe978a34da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> -->
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9695808bb95011a4c2652975b_fe978a34da" tabindex="-1" value=""></div>
-
-
-            <!-- </form> -->
-          </div>
-
-
-            <div class="row" >
+            <div class="row">
               <div class="col-md-6 mobileform ">
-                  <div style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);padding: 2px; border-radius: 4px; padding: 1px;">
-                <button type="button" class="btn github-discord  btn-block icon-buttons" >
+                <div style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);padding: 2px; border-radius: 4px; padding: 1px;">
+                  <button type="button" class="btn github-discord  btn-block icon-buttons">
                     <i class="fab fa-github fa-2x social-icon" style="color: #7b69c3;"></i>
-                    <span class="find-us-on-github" > <a style="color:#7b69c3" href="https://github.com/bitclaims" target="_blank">FIND US ON GITHUB</a></span>
-                  </button></div>
+                    <span class="find-us-on-github">
+                      <a style="color:#7b69c3" href="https://github.com/bitclaims" target="_blank">FIND US ON GITHUB</a>
+                    </span>
+                  </button>
+                </div>
 
               </div>
 
               <div class="col-md-6 email mobileform ">
                 <div style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);  padding: 2px; border-radius: 4px; padding: 1px;">
-                <button type="button" class="btn github-discord  btn-block icon-buttons" >
+                  <button type="button" class="btn github-discord  btn-block icon-buttons">
                     <i class="fab fa-discord fa-2x social-icon" style="color: #7b69c3;"></i>
-                    <span  class="find-us-on-github"> <a style="color:#7b69c3" href="https://discord.gg/jtZjJnd" target="_blank"> JOIN US ON DISCORD</a></span>
+                    <span class="find-us-on-github">
+                      <a style="color:#7b69c3" href="https://discord.gg/jtZjJnd" target="_blank"> JOIN US ON DISCORD</a>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -200,7 +192,7 @@
 
       </div>
       <div class="col-md-8">
-          <!-- <img src="illustration-high-level@3x.png" class="img-responsive" alt=""> -->
+        <!-- <img src="illustration-high-level@3x.png" class="img-responsive" alt=""> -->
       </div>
 
 

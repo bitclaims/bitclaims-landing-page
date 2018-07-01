@@ -120,47 +120,48 @@ flickity-slide {
   left: 50%;
 }
 
-
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+
+@media only screen and (min-width: 320px) {
   flickity-slide {
     width: 100%;
     margin-right: 0px;
   }
-  .flickity-card{
+  .flickity-card {
     margin-left: 20px;
     margin-right: 20px;
   }
-
-  .timeline-card-header{
+  .timeline-card-header {
     font-size: 18px;
   }
-  .timeline-card-content{
+  .timeline-card-content {
     font-size: 14px;
   }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+
+@media only screen and (min-width: 480px) {
   flickity-slide {
     width: 100%;
   }
-  .flickity-card{
+  .flickity-card {
     margin-left: 20px;
     margin-right: 40px;
   }
-
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+
+@media only screen and (min-width: 768px) {
   flickity-slide {
     width: 80%;
   }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+
+@media only screen and (min-width: 992px) {
   flickity-slide {
     width: 60%;
   }

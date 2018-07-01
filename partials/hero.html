@@ -8,11 +8,16 @@
       <div class="col-md-8">
 
         <img class="hero-logo" alt="BitClaims" src="img/i.bitclaims@3x.png" width="77" height="77">
-        <div class="Radically-Affordable-Healthcare">Radically <br> Affordable Healthcare</div>
-        <div class="Join-the-global-community-thats-making-healthcare"><b>Join the global community that's making healthcare accessible to everyone</b></div>
+        <div class="Radically-Affordable-Healthcare">Radically
+          <br> Affordable Healthcare</div>
+        <div class="Join-the-global-community-thats-making-healthcare">
+          <b>Join the global community that's making healthcare accessible to everyone</b>
+        </div>
 
-        <div class="BitClaims-combines-direct-price-discovery-with-the hidden-sm hidden-xs" >
-          BitClaims uses blockchain technology to provide unprecedented price  <br> transparency for healthcare services, empowering patients  <br> to get the care they need at the cost they expect.
+        <div class="BitClaims-combines-direct-price-discovery-with-the hidden-sm hidden-xs">
+          BitClaims uses blockchain technology to provide unprecedented price
+          <br> transparency for healthcare services, empowering patients
+          <br> to get the care they need at the cost they expect.
         </div>
 
         <div style="font-size: 14px; font-family: 'IBM Plex Sans', sans-serif;  color: #7c7f8f;">
@@ -24,60 +29,47 @@
           <div class="col-md-8">
 
             <div id="mc_embed_signup">
-              <form
-              name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl"
-              id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form"
-              >
+              <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
 
-                    <div ng-hide="mailchimp.result === 'success'" class="row email-container">
-                    <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='bitclaims'">
-                    <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us18'">
-                    <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='9695808bb95011a4c2652975b'">
-                    <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='fe978a34da'">
+                <div ng-hide="mailchimp.result === 'success'" class="row email-container">
+                  <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='bitclaims'">
+                  <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us18'">
+                  <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='9695808bb95011a4c2652975b'">
+                  <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='fe978a34da'">
 
-                        <!--email icon-->
-                        <div class="col-md-1 email-icon-container">
-                            <i class="fas fa-envelope fa-2x"></i>
-                        </div>
-                        <!--end of email icon-->
-
-                      <!--email text field-->
-                      <div class="col-md-7 email-input">
-                          <input
-                            type="email"
-                            name="email"
-                            ng-model="mailchimp.EMAIL"
-                            placeholder="Email address"
-                            id="mce-EMAIL"
-                            required>
-                      </div>
-                      <!--end of email text field-->
-
-                      <!--whitepaper button-->
-                      <div class="col-md-4 whitepaper-form-container">
-                        <input
-                        ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)"
-                        value="WHITE PAPER"
-                        id="mc-embedded-subscribe"
-                        class="btn btn-block whitepaper-form-button">
-                      </div>
-                    </div>
-                    <!-- end of whitepaper button-->
-
-                    <div ng-show="mailchimp.result === 'error'" ng-cloak>
-                      <span ng-bind-html="mailchimp.errorMessage"></span>
-                    </div>
-
-                    <!-- Show success message if MailChimp returned successfully. -->
-                      <div ng-show="mailchimp.result === 'success'" ng-cloak>
-                        <span ng-bind-html="mailchimp.successMessage"></span>
-                    </div>
-
-                    <!-- chimp-bot-->
-                    <div class="chimp-bot">
-                    <input type="text" name="b_9695808bb95011a4c2652975b_fe978a34da" tabindex="-1" value="">
+                  <!--email icon-->
+                  <div class="col-md-1 email-icon-container">
+                    <i class="fas fa-envelope fa-2x"></i>
                   </div>
+                  <!--end of email icon-->
+
+                  <!--email text field-->
+                  <div class="col-md-7 email-input">
+                    <input type="email" name="email" ng-model="mailchimp.EMAIL" placeholder="Email address" id="mce-EMAIL" required>
+                  </div>
+                  <!--end of email text field-->
+
+                  <!--whitepaper button-->
+                  <div class="col-md-4 whitepaper-form-container">
+                    <input ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)" value="WHITE PAPER" id="mc-embedded-subscribe"
+                      class="btn btn-block whitepaper-form-button">
+                  </div>
+                </div>
+                <!-- end of whitepaper button-->
+
+                <div ng-show="mailchimp.result === 'error'" ng-cloak>
+                  <span ng-bind-html="mailchimp.errorMessage"></span>
+                </div>
+
+                <!-- Show success message if MailChimp returned successfully. -->
+                <div ng-show="mailchimp.result === 'success'" ng-cloak>
+                  <span ng-bind-html="mailchimp.successMessage"></span>
+                </div>
+
+                <!-- chimp-bot-->
+                <div class="chimp-bot">
+                  <input type="text" name="b_9695808bb95011a4c2652975b_fe978a34da" tabindex="-1" value="">
+                </div>
 
               </form>
 
@@ -89,18 +81,22 @@
             <div class="row">
               <div class="col-md-6 nopadding left-button">
                 <button type="button" class="btn github-discord tras btn-block icon-buttons" style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);">
-                    <i class="fab fa-github fa-2x social-icon"></i>
-                        <span class="find-us-on-github" > <a style="color:white;" href="https://github.com/bitclaims" target="_blank" >FIND US ON GITHUB</a></span>
-                  </button>
+                  <i class="fab fa-github fa-2x social-icon"></i>
+                  <span class="find-us-on-github">
+                    <a style="color:white;" href="https://github.com/bitclaims" target="_blank">FIND US ON GITHUB</a>
+                  </span>
+                </button>
               </div>
               <div class="col-md-6 nopadding right-button">
                 <button type="button" class="btn  github-discord tras  btn-block icon-buttons" style="background-image:  linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);">
-                    <i class="fab fa-discord fa-2x social-icon"></i>
-                    <span  class="find-us-on-github"> <a style="color:white;" href="https://discord.gg/jtZjJnd" target="_blank"> JOIN US ON DISCORD</a></span>
-                  </button>
+                  <i class="fab fa-discord fa-2x social-icon"></i>
+                  <span class="find-us-on-github">
+                    <a style="color:white;" href="https://discord.gg/jtZjJnd" target="_blank"> JOIN US ON DISCORD</a>
+                  </span>
+                </button>
               </div>
             </div>
-              <span id="subscribe-result"></span>
+            <span id="subscribe-result"></span>
           </div>
         </div>
       </div>
@@ -108,7 +104,7 @@
 
       <!-- Start of right side Hero -->
       <div class="col-md-4 Aligner-item Aligner-item--bottom hidden-sm hidden-xs">
-        <img class="phone img-responsive " src="img\croppedPhone.png"  alt="dd">
+        <img class="phone img-responsive " src="img\croppedPhone.png" alt="dd">
       </div>
 
 
@@ -132,8 +128,8 @@
       </div>
 
     </div>
-      <div class="spacer"></div>
-<!-- <div class="row">
+    <div class="spacer"></div>
+    <!-- <div class="row">
   <div class="col-md-2">
 
   </div>

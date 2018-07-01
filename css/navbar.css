@@ -1,73 +1,66 @@
-.brand-text{
-font-family: IBMPlexSans;
-font-size: 24px;
-font-weight: 500;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-letter-spacing: normal;
-color: #63549d;
-}
-
-.bitclaims-navbar{
-background-color: #ffffff;
-background-color: var(--white);
-box-shadow: 0 1px 0 0 #d3d4de;
-
-}
-
-.bitclaims-navbar li{
-  font-family: 'IBM Plex Sans', sans-serif;
-
-
-font-weight: 500;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-letter-spacing: normal;
-color: #a8acb8;
-}
-
-.sign-up-button{
-color:white;
-font-family: 'IBM Plex Sans', sans-serif;
-border-radius: 4px;
-width: 120%;
-background: rgb(168,153,230);
-background: linear-gradient(141deg, rgba(168,153,230,1) 0%, rgba(234,181,190,1) 100%);
-}
-
-.navbar-brand{
-font-family: 'IBM Plex Sans', sans-serif;
-
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-letter-spacing: normal;
-color: #63549d !important;
-}
-
-#brand-text{
+.brand-text {
+  font-family: IBMPlexSans;
   font-size: 24px;
-  padding-top: 9px;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-
-
-.Radically-Affordable-Healthcare {
-
-
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   color: #63549d;
 }
+
+.bitclaims-navbar {
+  background-color: #ffffff;
+  background-color: var(--white);
+  box-shadow: 0 1px 0 0 #d3d4de;
+}
+
+.bitclaims-navbar li {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #a8acb8;
+}
+
+.sign-up-button {
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-radius: 4px;
+  width: 120%;
+  background: rgb(168, 153, 230);
+  background: linear-gradient(141deg, rgba(168, 153, 230, 1) 0%, rgba(234, 181, 190, 1) 100%);
+}
+
+.navbar-brand {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #63549d !important;
+}
+
+#brand-text {
+  font-size: 24px;
+  padding-top: 9px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.Radically-Affordable-Healthcare {
+  color: #63549d;
+}
+
 .navbar-toggle {
   border: none;
   outline: none;
 }
 
-.navbar{
+.navbar {
   background-color: white;
   margin-bottom: 20px;
-
 }
 
 /* .item{
@@ -82,18 +75,16 @@ color: #63549d !important;
   opacity:1;
  } */
 
-
-
 /* .nav-text{
  margin-left: 13%;
 }
  */
 
- .collapsing {
-     -webkit-transition: none;
-     transition: none;
-     display: none;
- }
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
 
 /* Small Devices, Tablets */
 
@@ -123,8 +114,7 @@ color: #63549d !important;
     font-size: 18px;
     width: 100%;
   }
-  .nav-text{
-   margin-left: 13%;
+  .nav-text {
+    margin-left: 13%;
   }
-
 }
